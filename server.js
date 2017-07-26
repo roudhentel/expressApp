@@ -6,7 +6,7 @@ let PORT = process.env.PORT || 80;
 let http = require('http').Server(app);
 
 // public folder
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '/')));
 
 // start with index.html
 app.get('/', function (req, res) {
